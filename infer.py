@@ -3,7 +3,7 @@ from modelscope import Model, snapshot_download
 from modelscope.models.nlp.llama2 import Llama2Tokenizer
 
 
-model_dir = snapshot_download("modelscope/Llama-2-13b-chat-ms", cache_dir="../model_cache", revision='v1.0.2', 
+model_dir = snapshot_download("modelscope/Llama-2-13b-chat-ms", cache_dir="model_cache", revision='v1.0.2', 
                               ignore_file_pattern=[r'.+\.bin$'])
 tokenizer = Llama2Tokenizer.from_pretrained(model_dir)
 model = Model.from_pretrained(
