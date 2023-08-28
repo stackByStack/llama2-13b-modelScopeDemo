@@ -1,0 +1,4 @@
+modelscope
+sentencepiece
+transformers
+accelerate
